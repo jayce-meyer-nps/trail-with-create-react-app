@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import NPMapTrail from '@npmap/trail'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+
+        <NPMapTrail trailDataUrl='https://svcdev.nps.gov/data/api/v1/sites/fc8edc08-f1ec-97f3-a796-692570030ada?apikey=KXuXrDdge2Csv0xbC01JhhNNaDGcmICX&format=geojson&select=edit,trailinfo' />
       </header>
     </div>
   );
