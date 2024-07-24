@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <p className="header-text">NPMapTrail with create-react-app</p>
 
         <div className="map-container">
@@ -84,9 +84,11 @@ function App() {
             trailDataUrl={'https://svcdev.nps.gov/data/api/v1/sites/6b89dc08-26eb-4a2a-b229-11ca4b8e46e4?apikey=KXuXrDdge2Csv0xbC01JhhNNaDGcmICX&format=geojson&select=relatedsites,images,icon,geometry,id,description,trailinfo,amenities'}
             featurePopupToShow={featureToShow} // Optional - Use to show a map popup for a feature (if contained in the data from trailDataUrl)
             elementClicked={handleElementClicked} // Optional. Use to capture a clicked map feature
+            mapCssHeight={'100%'} // Optional, defaults to 98vh - if the parent element of the map uses "%" for height, then this cannot be a "%" value
+            mapCssWidth={'100%'}  // Optional, defaults to 100%
           />
         </div>
-      </header>
+      </div>
     </div>
   );
 }

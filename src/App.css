@@ -1,9 +1,12 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -16,7 +19,8 @@
 .App-header {
   background-color: #282c34;
   height: 100%;
-  width: 100%;
+  width: 95%;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +42,7 @@
 }
 
 .header-text {
-  height: 20px;
+  height: 2vh;
   font-size: 22;
 }
 
@@ -47,10 +51,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 20%;
 }
 
 .map-container {
-  height: 100%;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: row;
