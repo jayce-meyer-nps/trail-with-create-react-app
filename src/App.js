@@ -82,10 +82,13 @@ function App() {
           
           <NPMapTrail 
             trailDataUrl={'https://svcdev.nps.gov/data/api/v1/sites?apikey=KXuXrDdge2Csv0xbC01JhhNNaDGcmICX&format=geojson&type=trail&select=relatedsites,images,icon,geometry,id,description,trailinfo,amenities&code=ROMO'}
+            trailAlertsUrl={'https://svcdev.nps.gov/data/api/v1/trdx/feeds?apikey=KXuXrDdge2Csv0xbC01JhhNNaDGcmICX&format=geoJson'} // Optional - URL for trail alerts, defaults to all alerts from PROD
             featurePopupToShow={featureToShow} // Optional - Use to show a map popup for a feature (if contained in the data from trailDataUrl)
             elementClicked={handleElementClicked} // Optional. Use to capture a clicked map feature
             mapCssHeight={'100%'} // Optional, defaults to 98vh - if the parent element of the map uses "%" for height, then this cannot be a "%" value
             mapCssWidth={'100%'}  // Optional, defaults to 100%
+            enableTrailAlerts={true}  // Optional, defaults to true
+            enableTrailAlertsToggle={true}  // Optional, defaults to true (but relies on enableTrailAlerts being true)
           />
         </div>
       </div>
