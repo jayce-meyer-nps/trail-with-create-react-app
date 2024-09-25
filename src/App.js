@@ -2,7 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import NPMapTrail from '@npmap/trail'
 import { useState } from 'react';
-import { MOCK_FEATURE_POINT_OF_INTEREST, MOCK_FEATURE_TRAIL_ALERTS, MOCK_FEATURE_TRAIL_DATA_WITH_ELEVATION } from './mock-constants'
+import { 
+    MOCK_FEATURE_POINT_OF_INTEREST, 
+    MOCK_FEATURE_TRAIL_ALERTS, 
+    MOCK_FEATURE_TRAIL_DATA_WITH_ELEVATION,
+    myElevationProfileOptions
+} from './mock-constants'
 
 function App() {
   const [featureToShow, setFeatureToShow] = useState(null)
@@ -39,7 +44,9 @@ function App() {
             mapCssWidth={'100%'}  // Optional, defaults to 100%
             enableTrailAlerts={true}  // Optional, defaults to true
             enableTrailAlertsToggle={true}  // Optional, defaults to true (but relies on enableTrailAlerts being true)
-            useTESTElevation={true}
+            enableElevationProfile={true}  // Optional, defaults to true
+            // elevationProfileOptions={myElevationProfileOptions} // Optional, has default styling
+            // useTESTElevation={true}
           />
         </div>
       </div>

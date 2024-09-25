@@ -5985,3 +5985,42 @@ export const MOCK_FEATURE_TRAIL_ALERTS = `{
 ],
 "type": "FeatureCollection"
 }`;
+
+export const myElevationProfileOptions = {
+    // Can exclude any/all properties
+    chartHeight: '50%',
+    chartBackgroundColor: '#d4d4d4de',
+    displayChartTitle: true,
+    chartTitleText: 'Elevation Profile for Selected Trail',
+    chartTitleColor: 'darkgreen',
+    chartTitlePosition: 'right',
+    unitSystem: 'metric', // 'metric' | 'imperial'
+    fontSize: 14,
+    displayXAxisDistanceLabels: true,
+    displayYAxisElevationLabels: true,
+    displayAxisLabelUnits: true,
+    axisLabelColor: '#1b1b1b',
+    profileLineWidth: 5.0,
+    profileLineColor: '#8b4513',
+    belowProfileLineColor: '#d6b59c94',
+    displayTooltip: true,
+    tooltipTextColor: '#000',
+    tooltipBackgroundColor: '#eee',
+    displayTooltipDistance: true,
+    displayTooltipElevation: true,
+    displayTooltipDPlus: true,
+    displayTooltipGrade: true,
+    displayDistanceVerticalGridLines: true,
+    displayElevationHorizontalGridLines: true,
+    distanceVerticalGridLineColor: '#0001',
+    elevationHorizontalGridLineColor: '#0001',
+    displayProfileLineCrosshair: true,
+    crosshairLineColor: 'darkgreen',
+    chartPaddingTop: 5,
+    chartPaddingBottom: 5,
+    chartPaddingLeft: 10,
+    chartPaddingRight: 10,
+    onChangeView: null,
+    onClick: null,
+    onMove: null
+}
