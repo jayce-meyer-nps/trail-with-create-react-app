@@ -46,7 +46,6 @@ function App() {
             enableTrailAlertsToggle={true}  // Optional, defaults to true (but relies on enableTrailAlerts being true)
             enableElevationProfile={true}  // Optional, defaults to true
             // elevationProfileOptions={CUSTOM_ELEVATION_PROFILE_OPTIONS} // Optional, has default styling
-            // useTESTElevation={true}
           />
         </div>
       </div>
