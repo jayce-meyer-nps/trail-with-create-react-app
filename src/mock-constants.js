@@ -1865,6 +1865,7 @@ export const CUSTOM_ELEVATION_PROFILE_OPTIONS = {
     chartHeight: '50%',
     chartBackgroundColor: '#d4d4d4de',
     displayChartTitle: true,
+    displayMetadata: true,
     chartTitleText: 'Elevation Profile for Selected Trail',
     chartTitleColor: 'darkgreen',
     chartTitlePosition: 'right',
